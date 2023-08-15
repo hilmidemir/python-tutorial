@@ -1,4 +1,5 @@
-'''' type casting
+''''
+type casting
 x = input("1. Number: ")
 type(x)
 y = input("2. Number: ")
@@ -42,6 +43,26 @@ result = 200 / 700
 
 # print(f'My name is {name} {surname} and ı m {age} years old'.format(name, surname, age))
 
+# ---------------------------------------------------------
+# string methods
+
+message = 'you shall not pass'
+
+# message.upper() #all words are upper case now
+# message.lower() all words are lower case now
+# message.title() all words first letter upper case
+# message.capitalize() only first word's first letter is lower case
+# message.strip() eğer mesaj boşlukla başlıyorsa boşkul silinir
+# message.split() split metodu işte amk ama içine parametre verirsek ona göre böler /aynı k*rt gibi
+# message = ' '.join(message) split methoduyla ayrılmış dizinin içindeki elemanları boşluk bırakarak geri birleştirir
+# isFound = message.startswith('y') mesajın y harfi ile mi başladığını kontrol eder
+# isFound = message.endsswith('s') mesajın s harfi ile mi bittiğini kontrol eder
+
+# message = message.replace('you', 'cunt')
+# message = message.replace('ç', 'c')
+
+# message = message.center(50,'.')
+# print(message)
 
 
 
