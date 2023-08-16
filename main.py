@@ -64,5 +64,147 @@ message = 'you shall not pass'
 # message = message.center(50,'.')
 # print(message)
 
+#-------------------------------------------------------
+
+#Lists
+
+brands = ['BMW', 'Mercedes', 'Audi', 'Mazda']
+#print(brands)
+#print(len(brands))
+#brands[-1] = 'Ferrari'
+#print(brands[:3])
+#brands[2:] = ['Toyota', 'Renault']   3. ve 4. elemanın değerini değişir
+#brands2 = ['Pagani', 'Nissan']
+#brands = brands + brands2
+#print(brands)
+#brands.pop(-1)                 Son elemanı siler
+#print(brands)
+#print(brands[::-1]           Listeyi tersten yazar
+
+#-------------------------------------------------------------------
+
+#List methods
+
+numbers = [1, 4, 7, 8, 6, 1, 9]
+letters = ['a', 'f', 't', 'b', 'r', 'n']
+
+#numbers.append(31)
+#numbers.append(52)
+#numbers.insert(3, 31) 3. indexten sonra 31 sayısını ekledik
+#numbers.pop() son elemanı siler içine verdiğimiz parmetredeki elemanı da silebiliriz       Bunların hepsini Letters için de yapabiliriz
+#numbers.remove() içine yazılan değeri bulur ve siler
+#numbers.sort()  listeyi sıralamamızı sağlar
+#numbers.reverse()  listeyi terse çevirmemizi sağlar
+#numbers.count(1) listenin içinde 1 sayısının kaç adet olduğunu söyler
+
+names = ['Ali', 'Yağmur', 'Hasan', 'Deniz']
+years = [1998, 2000, 1998, 1987]
+
+#names.append('Cenk tosun sana kosun')
+#names.insert(0, 'Sena') Listenin başına sena ekledik
+#names.remove('Deniz')
+#print(names.index('Deniz')) Deniz kelimesinin indexini gösterir
+#isExist = 'Ali' in names     Ali kelimesinin listede olup olmadığını kontrol ediyoruz
+#print(isExist)
+#print(names.count('Ali'))
+#print(names)
+
+#str = "Chevrolet,Dacia"
+#str = str.split(',')
+#print(str)
+
+#brand1 = input('1. Markayı giriniz')
+#brand2 = input('2. Markayı giriniz')
+#brand3 = input('3. Markayı giriniz')
+#userBrands = []
+#userBrands.append(brand1)
+#userBrands.append(brand2)
+#userBrands.append(brand3)
+#print(userBrands)
+
+#--------------------------------------------------------------
+'''
+Dicktionary
+
+plates = {'Ordu': 52, 'Elazığ': 23, 'Sakarya': 54} Dictionary
+
+plates['Ankara'] = 6
+plates['Sakarya'] = 3131
+
+print(plates)
+'''
+
+'''
+users = {
+    'hilmidemir' : {
+        'age': 23,
+        'address': 'Samsun',
+        'roles': ['user']
+    },
+    'nursahdemir' : {
+        'age': 23,
+        'address': 'Elazığ',
+        'roles': ['admin', 'user']
+    }
+}
+print(users['nursahdemir']['roles'][0])
+'''
+
+'''
+students = {}
+
+number = input('Öğrenci no: ')
+name = input("öğrenci adı: ")
+surname = input("öğrenci soyadı ")
+phone = input("öğrenci telefon: ")
+
+students.update({
+    number: {
+        'ad': name,
+        'soyad': surname,
+        'telefon': phone
+    }
+})
+
+number = input('Öğrenci no: ')
+name = input("öğrenci adı: ")
+surname = input("öğrenci soyadı ")
+phone = input("öğrenci telefon: ")
+
+students.update({
+    number: {
+        'ad': name,
+        'soyad': surname,
+        'telefon': phone
+    }
+})
+
+number = input('Öğrenci no: ')
+name = input("öğrenci adı: ")
+surname = input("öğrenci soyadı ")
+phone = input("öğrenci telefon: ")
+
+students.update({
+    number: {
+        'ad': name,
+        'soyad': surname,
+        'telefon': phone
+    }
+})
+print('-' * 50)
+
+stdNo = input('Öğrenci No: ')
+student = students[stdNo]
+
+print(f'Aradığınız {stdNo} numaralı öğrencinin adı: {student["ad"]} soyadı: {student["soyad"]} ne telefon numarası: {student["telefon"]}dır')
+
+'''
+
+
+
+
+
+
+
 
 
