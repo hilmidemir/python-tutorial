@@ -1,3 +1,33 @@
+'''
+Python'da set, dictionary, tuple ve list gibi veri yapıları arasındaki temel farklılıklar aşağıda özetlenmiştir:
+
+List (Liste):
+
+Sıralıdır, yani elemanların sırası vardır ve aynı elemandan birden fazla kez içerebilir.
+Değiştirilebilir (mutable) veri yapısıdır, yani içeriği değiştirilebilir.
+[] köşeli parantezler veya list() fonksiyonu ile oluşturulabilir.
+Örnek: my_list = [1, 2, 3, 4, 5]
+Tuple (Demet):
+
+Sıralıdır ve listeye benzer, ancak değiştirilemez (immutable) veri yapısıdır.
+Bir kez oluşturulduktan sonra elemanları değiştirilemez.
+Parantez içine konulur veya virgülle ayrılmış öğeler ile oluşturulur.
+Örnek: my_tuple = (1, 2, 3, 4, 5)
+Set (Küme):
+
+Tekrar eden öğeleri içermez ve sırasızdır, yani elemanların sıralaması yoktur.
+Değiştirilebilir veri yapısıdır.
+{} süslü parantezler veya set() fonksiyonu ile oluşturulabilir.
+Örnek: my_set = {1, 2, 3, 4, 5}
+Dictionary (Sözlük):
+
+Anahtar-değer çiftlerini içerir. Anahtarlar benzersizdir ve sırasızdır.
+Anahtarlarla ilişkilendirilmiş değerleri saklar.
+{} süslü parantezler veya dict() fonksiyonu ile oluşturulabilir.
+Örnek: my_dict = {"ad": "Ahmet", "yas": 25, "meslek": "mühendis"}
+'''
+
+
 ''''
 type casting
 x = input("1. Number: ")
@@ -12,7 +42,7 @@ print(total)
 
 # --------------------------------------------------
 
-#character arrays
+#character lists
 
 name = 'hilmi'
 surname = 'demir'
@@ -199,6 +229,53 @@ student = students[stdNo]
 print(f'Aradığınız {stdNo} numaralı öğrencinin adı: {student["ad"]} soyadı: {student["soyad"]} ne telefon numarası: {student["telefon"]}dır')
 
 '''
+# ----------------------------------------------------------------------
+'''
+# Sets
+
+fruits = {'Orange', 'apple', 'banana'}
+# print(fruits[1]) set veri türünü bu şekilde görüntüleyemeyiz indexi yoktur.
+
+# for x in fruits:
+#     print(x)         #bu şekilde erişebiliriz
+fruits.add('cherry') # add işlemi çalışır
+fruits.update(['mango', 'grape', 'apple'])         # bu şekilde çoklu ekleme yapabiliriz fakat apple daha önceden olduğu için ikinci kez eklenmez
+fruits.remove('mango')  #delete mango
+fruits.discard('apple') #delete apple
+# fruits.pop()  it delete randomly     
+# fruits.clear()  delete everything
+print(fruits)
+myList = [1,2,4,6,7,3,1]
+
+print(set(myList))      # burada list olan mylist'i casting ile set e çevirebiliriz fakat tekrarlayan elemanlar çıkarılır.
+
+'''
+
+# --------------------------------------------------------
+
+# value types => String and number
+
+x = 5
+y = 25
+x = y
+y = 10
+
+# print(x, y)
+
+# Referance Types => list
+
+a = ["Orange", "banana"]
+b = ["apple", "banana"]
+a = b
+b[0] = "grape"
+
+# print(a, b)
+
+
+
+
+
+
 
 
 
