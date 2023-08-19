@@ -5,8 +5,10 @@ class Question:
     self.text = text
     self.choices = choices
     self.answer = answer
+
   def checkAnswer(self, answer):
     return self.answer == answer
+
 
 # Quiz
 class Quiz:
@@ -16,7 +18,7 @@ class Quiz:
     self.questionIndex = 0
 
   def getQuestion(self):
-    return  self.questions[self.questionIndex]
+    return self.questions[self.questionIndex]
 
   def displayQuestion(self):
     question = self.getQuestion()
@@ -55,6 +57,7 @@ class Quiz:
   def showScore(self):
     print('Score: ', self.score)
 
+
 q1 = Question('En şeqil araba nedir?', ['BMW', 'Audi', 'Mercedes'], 'BMW')
 q2 = Question('En şeqil soda nedir?', ['Beypazarı', 'Kızılay', 'Akmina'], 'Beypazarı')
 q3 = Question('En şeqil tuvalet kağıdı nedir?', ['Papia', 'Solo', 'Teno'], 'Papia')
@@ -66,13 +69,3 @@ questions = [q1, q2, q3, q4, q5]
 quiz = Quiz(questions)
 
 quiz.loadQuestion()
-
-
-
-
-
-
-
-
-
-
