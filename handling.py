@@ -24,6 +24,7 @@ while True:
     print('try except sonlandı')
 '''
 
+'''
 def check_password(psw):
   import re
   if len(psw) < 8:
@@ -51,8 +52,16 @@ else:
   print('Geçerli parola: try bloğu')
 finally:
   print('Validation tamamlandı ')
+'''
 
+class Person:
+  def __init__(self, name, year):
+    if len(name) > 10:
+      raise Exception("Name alanı fazla karakter içeriyor az karaktersiz yapın")
+    else:
+      self.name = name
 
+p = Person("Aliiiiiiiiiiiiiiiiiii", 1999)
 
 
 
