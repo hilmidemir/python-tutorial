@@ -1,1 +1,1 @@
-Python readme
+This is a education for my internship projects
