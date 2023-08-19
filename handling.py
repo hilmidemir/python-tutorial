@@ -49,7 +49,7 @@ try:
 except Exception as ex:
   print(ex)
 else:
-  print('Geçerli parola:aaa try bloğu')
+  print('Geçerli parola: try bloğu')
 finally:
   print('Validation tamamlandı ')
 '''
