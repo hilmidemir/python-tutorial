@@ -1,4 +1,4 @@
-#Error Handling
+# Error Handling
 
 '''
 try:
@@ -53,7 +53,7 @@ else:
 finally:
   print('Validation tamamlandı ')
 '''
-
+'''
 class Person:
   def __init__(self, name, year):
     if len(name) > 10:
@@ -61,7 +61,78 @@ class Person:
     else:
       self.name = name
 
-p = Person("Aliiiiiiiiiiiiiiiiiii", 1999)
+p = Person("Aliiiiiiii", 1999)
+'''
+'''
+liste = ["1", "2", "5a", "1a1", "31", "52"]
+
+for x in liste:
+  try:
+    result = int(x)
+    print(result)
+  except ValueError:
+    continue
+'''
+'''
+while True:
+  i = input('Bir sayı giriniz çıkmak için q giriniz')
+  if i == 'q':
+    break
+  try:
+    i = int(i)
+  except ValueError:
+    print('Bir sayı giriniz çıkmak için q giriniz')
+    continue
+'''
+
+'''
+def checkPassword(password):
+  turkceKarakterler = 'ıüğçöİş'
+  for i in password:
+    if i in turkceKarakterler:
+      raise TypeError('Parolanız türkçe karakter içeremez')
+    else:
+      pass
+  print('Geçerli parola')
+
+
+password = input('Parola giriniz')
+try:
+  checkPassword(password)
+except TypeError as err:
+  print(err)
+'''
+
+def faktoriyel(x):
+  x = int(x)
+  if x < 0:
+    raise ValueError('Faktöriyteli alınacak değer 0 dan küçük olamaz')
+  result = 1
+  for i in range(1, x+1):
+    result *= i
+
+  return result
+
+for x in [5, 2, -6,'6a']:
+  try:
+    y = faktoriyel(x)
+  except ValueError as err:
+    print(err)
+    continue
+  print(y)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
