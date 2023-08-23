@@ -95,7 +95,7 @@ with open('newFile.txt', 'r+', encoding='utf-8') as file: # r+ dediğimizde hem 
   file.write(content)
 
 with open('newFile.txt', 'r', encoding='utf-8') as file:
-  print(file.read())
+  print(file.read()) 
 ''' #Sayfa başına bilgi ekleme
 
 with open('newFile.txt', 'r+', encoding='utf-8') as file:
