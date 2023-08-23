@@ -1,1 +1,1 @@
-This is a education for my internship projects
+This is a introduction for my internship projects
