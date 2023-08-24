@@ -103,6 +103,11 @@ brands = ['BMW', 'Mercedes', 'Audi', 'Mazda']
 #print(len(brands))
 #brands[-1] = 'Ferrari'
 #print(brands[:3])
+satir = "afasdkjgsfşg s\n"
+#satir = satir[:-1]
+result = len(satir)
+print(satir)
+print(result)
 #brands[2:] = ['Toyota', 'Renault']   3. ve 4. elemanın değerini değişir
 #brands2 = ['Pagani', 'Nissan']
 #brands = brands + brands2
